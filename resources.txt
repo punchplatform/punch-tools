@@ -1,0 +1,16 @@
+# This file lists the images that should be downloaded with
+# Punch-resources-helper.sh script.
+
+# Punch Images
+
+## Operator (mandatory)
+ghcr.io/punchplatform/operator:8.0-dev
+
+
+## Artifacts Server (mandatory)
+ghcr.io/punchplatform/resourcectl:8.0-dev
+ghcr.io/punchplatform/artifacts-server:8.0-dev
+
+## Stormline (optional)
+ghcr.io/punchplatform/punchline-java:8.0-dev
+
