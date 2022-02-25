@@ -76,8 +76,8 @@ saveImages() {
     for element in "${array_images[@]}"; do
       IFS=';' read -a lines <<< $element
       IFS=':' read -a app_names <<< ${lines[2]}
-      docker save ${lines[1]} -o images_tar/${app_names[0]}.tar
-      echo "${lines[1]}  -> ${app_names[0]}.tar"
+      docker save ${lines[1]} -o images_tar/${app_names[0]}-${app_names[1]}.tar
+      echo "${lines[1]}  -> ${app_names[0]}-${app_names[1]}.tar"
     done
     printf "${NC}"
 
