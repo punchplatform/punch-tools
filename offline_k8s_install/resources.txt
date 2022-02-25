@@ -11,6 +11,6 @@ ghcr.io/punchplatform/operator:8.0-dev
 ghcr.io/punchplatform/resourcectl:8.0-dev
 ghcr.io/punchplatform/artifacts-server:8.0-dev
 
-## Stormline (optional)
+## StreamPunchline (optional)
 ghcr.io/punchplatform/punchline-java:8.0-dev
 
