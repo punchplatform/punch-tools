@@ -79,6 +79,8 @@ saveImages() {
       docker save ${lines[1]} -o images_tar/${app_names[0]}-${app_names[1]}.tar
       echo "${lines[1]}  -> ${app_names[0]}-${app_names[1]}.tar"
     done
+    echo "Create a zip archive of tar images"
+    zip images_tar.zip -r images_tar
     printf "${NC}"
 
 }
@@ -90,6 +92,9 @@ saveHelmsCharts() {
     wget https://github.com/punchplatform/punch-helm/raw/master/operator-crds-$HELM_TAG.tgz  -O punch_charts/operator-crds-$HELM_TAG.tgz 
     wget https://github.com/punchplatform/punch-helm/raw/master/operator-$HELM_TAG.tgz  -O punch_charts/operator-$HELM_TAG.tgz 
     wget https://github.com/punchplatform/punch-helm/raw/master/artifacts-$HELM_TAG.tgz  -O punch_charts/artifacts-$HELM_TAG.tgz 
+
+    echo "Create a zip archive of tar images"
+    zip punch_charts.zip -r punch_charts
     printf "${NC}"
     }
 
