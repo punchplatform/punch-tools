@@ -6,7 +6,7 @@ readonly LBLUE='\033[1;34m'
 readonly NC='\033[0m'
 readonly SCRIPT_NAME="punch-resources-helper"
 TARGET_REGISTRY=my-registry:30005
-HELM_TAG=8.0-latest
+HELM_TAG=8.0.0
 FILE="./resources.txt"
 
 showUsage() {
