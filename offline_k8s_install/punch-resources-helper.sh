@@ -91,7 +91,7 @@ saveHelmsCharts() {
     mkdir -p punch_charts
     wget https://github.com/punchplatform/punch-helm/raw/master/operator-crds-$HELM_TAG.tgz  -O punch_charts/operator-crds-$HELM_TAG.tgz 
     wget https://github.com/punchplatform/punch-helm/raw/master/operator-$HELM_TAG.tgz  -O punch_charts/operator-$HELM_TAG.tgz 
-    wget https://github.com/punchplatform/punch-helm/raw/master/artifacts-$HELM_TAG.tgz  -O punch_charts/artifacts-$HELM_TAG.tgz 
+    wget https://github.com/punchplatform/punch-helm/raw/master/artifacts-server-$HELM_TAG.tgz  -O punch_charts/artifacts-server-$HELM_TAG.tgz 
 
     echo "Create a zip archive of tar images"
     zip punch_charts.zip -r punch_charts
