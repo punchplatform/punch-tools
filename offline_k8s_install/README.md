@@ -19,4 +19,4 @@ This script can be used to load Punch images on your private registry.
 #### How to use it ?
 - On a Kubernetes Master run this script and use option to point on a folder that contains tar images
 
-[More info here](https://punch-1.gitbook.io/punch-doc/deployment/deployment-procedure/offline-mode)
+[More info here](https://punch-1.gitbook.io/punch-doc/deployment/scenarios/on-premise)
