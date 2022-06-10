@@ -33,7 +33,7 @@ getListofImages() {
       IFS=$'\n' read -d "" -ra file_data < "$FILE"
 
       for element in "${file_data[@]}"; do
-          if [[ $element == *'ghcr.io/punchplatform'* ]]; then
+          if [[ $element == *'ghcr.io'* ]]; then
               IFS='/' read -a lines <<< "$element"
               image_new_tag="$TARGET_REGISTRY/${lines[1]}/${lines[2]}"
               application_name=${lines[2]}
