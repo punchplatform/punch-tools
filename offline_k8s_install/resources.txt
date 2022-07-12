@@ -14,3 +14,11 @@ ghcr.io/punchplatform/artifacts-server:8.0-dev
 ## StreamPunchline (optional)
 ghcr.io/punchplatform/punchline-java:8.0-dev
 
+## BatchPunchlines (optional)
+ghcr.io/punchplatform/punchline-python:8.0-dev
+ghcr.io/punchplatform/punchline-pyspark:8.0-dev
+ghcr.io/punchplatform/punchline-spark:8.0-dev
+
+## Tools : punchlets tester & logs injector 
+ghcr.io/punchplatform/puncher:8.0-dev
+ghcr.io/punchplatform/simulator:8.0-dev
